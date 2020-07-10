@@ -9,8 +9,4 @@ export * as server from './lib/server.ts';
 export * as toolkit from './lib/toolkit.ts';
 export * as types from './lib/types.ts';
 
-import _main from './lib/mod.ts';
-
-export const Main = _main;
-
-export default Main;
+export { default } from './lib/main.ts';

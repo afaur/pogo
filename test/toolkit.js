@@ -1,5 +1,5 @@
 import { assertEquals, assertStrictEq } from '../dev-dependencies.ts';
-import pogo from '../main.ts';
+import pogo from '../mod.ts';
 
 const { test } = Deno;
 
