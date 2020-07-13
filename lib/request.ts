@@ -9,7 +9,7 @@ export interface RequestOptions {
     server: Server
 }
 
-export class Request {
+export default class Request {
     raw: http.ServerRequest;
     route: MatchedRoute;
     method: string;
@@ -57,5 +57,3 @@ export class Request {
         return this.url.searchParams;
     }
 }
-
-export default Request;

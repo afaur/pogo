@@ -12,7 +12,7 @@ export interface CookieOptions extends Omit<cookie.Cookie, 'name'> {
     name?: cookie.Cookie['name']
 }
 
-export class Response {
+export default class Response {
     body: ResponseBody;
     headers: Headers;
     status: number;
@@ -99,5 +99,3 @@ export class Response {
         return this;
     }
 }
-
-export default Response;
