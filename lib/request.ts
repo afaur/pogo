@@ -3,7 +3,7 @@ import Response from './response.ts';
 import Server from './server.ts';
 import { RequestParams, MatchedRoute } from './types.ts';
 
-export interface RequestOptions {
+interface RequestOptions {
     raw: http.ServerRequest,
     route: MatchedRoute,
     server: Server

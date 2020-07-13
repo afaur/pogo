@@ -118,7 +118,7 @@ const sortRoutes = (left: NormalizedRoute, right: NormalizedRoute): number => {
     return unchanged;
 };
 
-export interface RoutingTable {
+interface RoutingTable {
     conflictIds: Map<string, NormalizedRoute>,
     list: Array<NormalizedRoute>,
     pathfinders: Map<string, Array<NormalizedRoute>>,

@@ -2,13 +2,13 @@ import { cookie, status } from '../dependencies.ts';
 import { Bang } from './bang.ts';
 import { ResponseBody } from './types.ts';
 
-export interface ResponseOptions {
+interface ResponseOptions {
     body?: ResponseBody,
     headers?: HeadersInit,
     status?: number
 };
 
-export interface CookieOptions extends Omit<cookie.Cookie, 'name'> {
+interface CookieOptions extends Omit<cookie.Cookie, 'name'> {
     name?: cookie.Cookie['name']
 }
 
